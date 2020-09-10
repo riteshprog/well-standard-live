@@ -10,7 +10,7 @@
               <div class="row">
                 <div class="col-10 offset-1">
                   <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6" style="padding: 5%;">
                       <h1 style="font-size: 3rem; margin-top: 1.5rem;">Our standards</h1>
                       <p class="tx-thin tx-18">We’re committed to improving global health by transforming the spaces where people spend their lives - and our suite of standards, geared toward both all types of buildings and communities, is designed to do exactly that. </p>
                     </div>
@@ -85,11 +85,57 @@
                 </div>
               </div>
             </div>
+            <div class="col-12">
+              <div class="row" style="background: #fff; padding-top: 100px; padding-bottom:100px">
+                <div class="col-10 offset-1">
+                  <h1 class="text-center">Our values</h1>
+                </div>
+                <div class="col-10 offset-1">
+                  <div class="row" style="background: #fff">
+                    <div class="col-md-4 col-12" style="padding: 1%">
+                      <img src="//a.storyblok.com/f/52232/32x32/bde4611833/scale.svg" class="mb-3">
+                      <h5>Equitable</h5>
+                      <p>Provides the greatest benefit to the largest number of people, inclusive of all demographic and economic groups and with special consideration to less advantaged or vulnerable populations.</p>
+                    </div>
+                    <div class="col-md-4 col-12" style="padding: 1%">
+                      <img src="//a.storyblok.com/f/52232/x/444a1ff0f8/globe.svg" class="mb-3">
+                      <h5>Global</h5>
+                      <p>Proposes interventions that are feasible, achievable and relevant across many applications throughout the world. WELL v2 offers regionally appropriate pathways for meeting health intents based on where projects are located.</p>
+                    </div>
+
+                    <div class="col-md-4 col-12" style="padding: 1%">
+                      <img src="//a.storyblok.com/f/52232/x/b144c4e51f/document-check.svg" alt="" class="mb-3">
+                      <h5>Evidence-based</h5>
+                      <p>Undergirded by strong, validated research leading to conclusions that can reasonably be accepted by the scientific community.</p>
+                    </div>
+
+                    <div class="col-md-4 col-12" style="padding: 1%">
+                      <img src="//a.storyblok.com/f/52232/x/54b5aaf43b/cogwheel.svg" alt="" class="mb-3">
+                      <h5>Technically Robust</h5>
+                      <p>Draws upon industry best practices and proven strategies, offering consistency in findings across the relevant field or discipline.</p>
+                    </div>
+
+                    <div class="col-md-4 col-12" style="padding: 1%">
+                      <img src="//a.storyblok.com/f/52232/x/134f2686a5/search.svg" alt="" class="mb-3">
+                      <h5>Customer Focused</h5>
+                      <p>Defines program requirements through a dynamic development process, with multiple opportunities for stakeholder engagement, and by tapping the expertise of established leaders in science, health, business, design and operations.</p>
+                    </div>
+
+                    <div class="col-md-4 col-12" style="padding: 1%">
+                      <img src="//a.storyblok.com/f/52232/x/452a805d47/content-360deg.svg" alt="" class="mb-3">
+                      <h5>Resilient</h5>
+                      <p>Responds to advances in scientific knowledge and technology, continuously adapting and integrating new findings in the field.</p>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+
         </div>
       </div>
     </div>
-    <h1></h1>
   </div>
 </div>
 </template>
@@ -104,11 +150,21 @@ export default {
 </script>
 
 <style>
+  h1 {
+    font-family:museo-slab;
+  }
+
 .mg-15 {
     margin: 15px;
 }
 .tx-center {
     text-align: center;
+}
+.tx-18 {
+    font-size: 18px;
+}
+.tx-thin {
+    font-weight: 200;
 }
 .tx-14 {
     font-size: 14px;
