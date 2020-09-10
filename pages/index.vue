@@ -1,4 +1,6 @@
 <template>
+<div>
+  <NavBar />
   <div class="container-fluid">
     <div class="mg-15">
       <div class="card card-w-shadow rounded">
@@ -89,10 +91,16 @@
     </div>
     <h1></h1>
   </div>
+</div>
 </template>
 
 <script>
-export default {}
+import NavBar from '../components/NavBar'
+export default {
+  components: {
+    NavBar
+  }
+}
 </script>
 
 <style>
