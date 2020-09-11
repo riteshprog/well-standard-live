@@ -5,17 +5,9 @@
 </template>
 
 <style>
-/* body {
+body {
     background: #e8ecef;
-    overflow-x: hidden;
-    font-family: museo-sans;
-    font-style: normal!important;
-    font-weight: 300!important;
-    color: #656565;
-    max-width: 1500px;
-    margin: auto;
-    min-height: 100vh;
-} */
+}
 html {
   font-family:
     'Source Sans Pro',

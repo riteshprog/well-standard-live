@@ -1,33 +1,40 @@
 <template>
 <div>
-  <NavBar />
-  <div class="container-fluid">
+  <b-container fluid>
+    <b-row>
+      <b-col>
+        <NavBar />
+        <button id="switch"  @click="toggleTheme">Switch</button>
+      </b-col>
+    </b-row>
+  </b-container>
+  <b-container fluid>
     <div class="mg-15">
-      <div class="card card-w-shadow rounded">
-        <div class="card-body">
-          <div class="row">
-            <div class="col-12">
-              <div class="row">
-                <div class="col-10 offset-1">
-                  <div class="row">
-                    <div class="col-md-6" style="padding: 5%;">
+      <b-card class="card-w-shadow rounded">
+        <b-card-body>
+          <b-row>
+            <b-col cols="12">
+              <b-row>
+                <b-col cols="10" offset="1">
+                  <b-row>
+                    <b-col md="6" style="padding: 5%;">
                       <h1 style="font-size: 3rem; margin-top: 1.5rem;">Our standards</h1>
                       <p class="tx-thin tx-18">We’re committed to improving global health by transforming the spaces where people spend their lives - and our suite of standards, geared toward both all types of buildings and communities, is designed to do exactly that. </p>
-                    </div>
-                    <div class="col-md-6 tx-center">
+                    </b-col>
+                    <b-col md="6" class="tx-center">
                       <img class="img-responsive" src="https://cdn.wellcertified.com/static/images/choice.png" style="max-height: 350px;" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="row" style="background: #fff; padding-top: 100px">
-                <div class="col-10 offset-1">
+                    </b-col>
+                  </b-row>
+                </b-col>
+              </b-row>
+            </b-col>
+            <b-col cols="12">
+              <b-row style="background: #fff; padding-top: 100px">
+                <b-col cols="10" offset="1">
                   <h1 class="text-center">Choose the best standard for your project</h1>
-                </div>
-                <div class="col-10 offset-1">
-                  <div class="row">
+                </b-col>
+                <b-col cols="10" offset="1">
+                  <b-row>
                     <div class="col-12" style="padding: 1%">
                       <div class="row bg-gray-200" style="margin: 1%; border: 2px solid #429db5; border-radius: 6px;">
                         <div class="col-12 text-center mt-3">
@@ -41,9 +48,9 @@
                         </div>
                       </div>    
                     </div>
-                  </div>
-                  <div class="row" style="background: #fff">
-                    <div class="col-md-4 col-12" style="padding: 1%">
+                  </b-row>
+                  <b-row style="background: #fff">
+                    <b-col md="4" cols="12" style="padding: 1%">
                       <div style="margin: 1%; border: 2px solid #D8D8D8; border-radius: 6px; padding: 4%">
                         <div class="text-centermt-3">
                               <img src="//a.storyblok.com/f/52232/300x113/3a5984cc5d/navlogos-v1-05.svg" class="Navigation__logo" style="width: 250px">
@@ -54,8 +61,8 @@
                         </div>
 
                       </div>
-                    </div>
-                    <div class="col-md-4 col-12" style="padding: 1%">
+                    </b-col>
+                    <b-col md="4" cols="12" style="padding: 1%">
                       <div style="margin: 1%; border: 2px solid #429db5; border-radius: 6px; padding: 4%;">
                         <div class="text-center mt-3">
                           <img src="//a.storyblok.com/f/52232/x/f7bb234cba/wellv2.svg" class="Navigation__logo" style="width: 250px">
@@ -67,8 +74,8 @@
                           <a class="btn btn-well-light" :href="$root.latestVersions.v2pilot.cn && $root.latestVersions.v2pilot.cn" v-if="isChinese">Choose WELL v2</a>
                         </div>
                       </div>
-                    </div>
-                    <div class="col-md-4 col-12" style="padding: 1%">
+                    </b-col>
+                    <b-col md="4" cols="12" style="padding: 1%">
                       <div style="margin: 1%; border: 2px solid #D8D8D8; border-radius: 6px; padding: 4%">
                         <div class="text-center mt-3">
                           <img src="//a.storyblok.com/f/52232/x/cd7451c8d6/wellcommunityvertical.svg" class="Navigation__logo" style="width: 250px">
@@ -80,71 +87,42 @@
                           <a class="btn btn-well-light" :href="$root.latestVersions.community.cn" v-if="isChinese && $root.latestVersions.community.cn">Choose WELL Community</a>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="row" style="background: #fff; padding-top: 100px; padding-bottom:100px">
-                <div class="col-10 offset-1">
+                    </b-col>
+                  </b-row>
+                </b-col>
+              </b-row>
+            </b-col>
+            <b-col cols="12">
+              <b-row style="background: #fff; padding-top: 100px; padding-bottom:100px">
+                <b-col cols="10" offset="1">
                   <h1 class="text-center">Our values</h1>
-                </div>
-                <div class="col-10 offset-1">
-                  <div class="row" style="background: #fff">
-                    <div class="col-md-4 col-12" style="padding: 1%">
-                      <img src="//a.storyblok.com/f/52232/32x32/bde4611833/scale.svg" class="mb-3">
-                      <h5>Equitable</h5>
-                      <p>Provides the greatest benefit to the largest number of people, inclusive of all demographic and economic groups and with special consideration to less advantaged or vulnerable populations.</p>
-                    </div>
-                    <div class="col-md-4 col-12" style="padding: 1%">
-                      <img src="//a.storyblok.com/f/52232/x/444a1ff0f8/globe.svg" class="mb-3">
-                      <h5>Global</h5>
-                      <p>Proposes interventions that are feasible, achievable and relevant across many applications throughout the world. WELL v2 offers regionally appropriate pathways for meeting health intents based on where projects are located.</p>
-                    </div>
+                </b-col>
+                <b-col cols="10" offset="1">
+                  <Footer />
+                </b-col>
+              </b-row>
+            </b-col>
+          </b-row>
 
-                    <div class="col-md-4 col-12" style="padding: 1%">
-                      <img src="//a.storyblok.com/f/52232/x/b144c4e51f/document-check.svg" alt="" class="mb-3">
-                      <h5>Evidence-based</h5>
-                      <p>Undergirded by strong, validated research leading to conclusions that can reasonably be accepted by the scientific community.</p>
-                    </div>
-
-                    <div class="col-md-4 col-12" style="padding: 1%">
-                      <img src="//a.storyblok.com/f/52232/x/54b5aaf43b/cogwheel.svg" alt="" class="mb-3">
-                      <h5>Technically Robust</h5>
-                      <p>Draws upon industry best practices and proven strategies, offering consistency in findings across the relevant field or discipline.</p>
-                    </div>
-
-                    <div class="col-md-4 col-12" style="padding: 1%">
-                      <img src="//a.storyblok.com/f/52232/x/134f2686a5/search.svg" alt="" class="mb-3">
-                      <h5>Customer Focused</h5>
-                      <p>Defines program requirements through a dynamic development process, with multiple opportunities for stakeholder engagement, and by tapping the expertise of established leaders in science, health, business, design and operations.</p>
-                    </div>
-
-                    <div class="col-md-4 col-12" style="padding: 1%">
-                      <img src="//a.storyblok.com/f/52232/x/452a805d47/content-360deg.svg" alt="" class="mb-3">
-                      <h5>Resilient</h5>
-                      <p>Responds to advances in scientific knowledge and technology, continuously adapting and integrating new findings in the field.</p>
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
+        </b-card-body>
+      </b-card>
     </div>
-  </div>
+  </b-container>
 </div>
 </template>
 
 <script>
 import NavBar from '../components/NavBar'
+import Footer from '../components/Footer'
 export default {
   components: {
-    NavBar
+    NavBar,
+    Footer
+  },
+  methods: {
+    toggleTheme () {
+      alert('change theme')
+    }
   }
 }
 </script>
