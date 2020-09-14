@@ -4,7 +4,7 @@
     <b-row>
       <b-col>
         <NavBar />
-        <button id="switch"  @click="toggleTheme">Switch</button>
+        <!-- <button id="switch"  @click="toggleTheme">Switch</button> -->
       </b-col>
     </b-row>
   </b-container>
@@ -69,7 +69,7 @@
                           <p class="tx-14 tx-light">Updated in 2018, WELL v2 is the latest, most flexible and highest impact version of WELL, combining feedback from our users with the most current health data and research. </p>
                         </div>
                         <div class="text-center mt-3 mb-3">
-                          <nuxt-link class="btn btn-well-light" to="/overview">Choose WELL v2</nuxt-link>
+                          <nuxt-link class="btn btn-well-light" to="/landing">Choose WELL v2</nuxt-link>
                           <a class="btn btn-well-light" :href="$root.latestVersions.v2pilot.en && $root.latestVersions.v2pilot.en" v-if="isEnglish">Choose WELL v2</a>
                           <a class="btn btn-well-light" :href="$root.latestVersions.v2pilot.cn && $root.latestVersions.v2pilot.cn" v-if="isChinese">Choose WELL v2</a>
                         </div>
@@ -121,6 +121,7 @@ export default {
   },
   methods: {
     toggleTheme () {
+      
       alert('change theme')
     }
   }
